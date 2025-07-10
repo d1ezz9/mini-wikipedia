@@ -10,7 +10,7 @@ cd ~/mini-wikipedia
 python mini-wikipedia.py' > mini-wiki && chmod +x mini-wiki && echo 'alias mini-wiki="~/mini-wikipedia/mini-wiki"' >> ~/.bashrc && source ~/.bashrc && echo -e "\n\033[1;32mГотово! Теперь используйте \033[1;33mmini-wiki\033[1;32m для запуска.\033[0m"
 ```
 
-*требуется python:*
+**требуется python:**
 
 ```bash
 pkg install python

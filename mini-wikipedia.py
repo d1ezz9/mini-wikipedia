@@ -10,7 +10,7 @@ def search(q):
 def article(title):
     try:
         r = requests.get(f"https://ru.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=True&explaintext=True&titles={quote(title)}", timeout=5).json()
-        p = next(iter(r.get('query',{}).get('pages',{}).values()),{}
+        p = next(iter(r.get('query',{}).get('pages',{}).values())),{}
         return None if 'missing' in p else re.sub(r'\n{3,}','\n\n',p.get('extract','')).strip()
     except: return None
 

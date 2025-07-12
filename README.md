@@ -3,7 +3,7 @@
 Консольный клиент для быстрого поиска статей в Википедии прямо из терминала. Весит всего **1 КБ** и работает без графического интерфейса.
 
 ## 📦 Установка
-
+P.S. только в bash, powershell - не сработает.
 ```bash
 pkg update -y && pkg install -y git python && git clone https://github.com/d1ezz9/mini-wikipedia.git && cd mini-wikipedia && pip install requests && echo '#!/bin/bash
 cd ~/mini-wikipedia
